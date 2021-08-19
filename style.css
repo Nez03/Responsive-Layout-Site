@@ -2,19 +2,47 @@
 /* =================================
   Base Element Styles
 ==================================== */
-h1 {
-  margin-top:0;
-}
-.container {
+body {
+  font-family: helvetica, arial, sans-serif;
   padding-left: 1em;
   padding-right: 1em;
 }
-.nav {
-  margin-left: 0;
+
+header {
+  background-color: grey;
+}
+h1 {
+  margin: 0 auto;
+  text-align: center;
+
 }
 
-ul li {
-  list-style: none;
+
+.main-nav {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+  font-family: helvetica, arial, sans-serif;
+
+}
+.nav li {
+    margin: 10px 0 10px 0;
+    padding: 10px 0;
+    background-color: white;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+
 }
 
 /* =================================
@@ -26,6 +54,7 @@ ul li {
     max-width: 1000px;
     margin: 0 auto;
   }
+
 
 
 }
