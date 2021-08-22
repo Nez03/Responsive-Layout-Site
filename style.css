@@ -2,6 +2,10 @@
 /* =================================
   Base Element Styles
 ==================================== */
+* {
+  box-sizing: border;
+}
+
 body {
   font-family: helvetica, arial, sans-serif;
   padding-left: 1em;
@@ -9,7 +13,7 @@ body {
 }
 
 header {
-  background-color: grey;
+
 }
 h1 {
   margin: 0 auto;
@@ -17,9 +21,21 @@ h1 {
 
 }
 
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0;
+}
+
+p {
+  text-align: center;
+  line-height: 1.3em;
+
+}
 
 .main-nav {
-
   padding: 10px;
   text-align: center;
 }
@@ -42,19 +58,82 @@ h1 {
   color: black;
   font-weight: bold;
   text-transform: uppercase;
+}
 
+
+.main-nav {
+  margin-bottom:60px;
+}
+
+.profile-image, .card-image {
+  margin: 0 auto;
+  display: block;
+}
+
+.card-image {
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+.profile-image {
+  width: 50%;
+}
+
+.card {
+  margin: 60px 0 60px 0;
+}
+
+#contact ul li{
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+  font-family: helvetica, arial, sans-serif;
 }
 
 /* =================================
   Media Queries
 ==================================== */
 @media (min-width: 769px){
-  .container {
-    width:100%;
+  body {
+  
+    width: 70%;
     max-width: 1000px;
     margin: 0 auto;
   }
 
+.nav {
+  margin-top: 20px;
+}
+.nav li {
+  display: inline;
+  margin: 40px 20px 0;
+}
 
 
+
+.profile-image {
+  width: 40%;
+  float: right;
+
+}
+
+#home p {
+  text-align: left;
+  width: 50%;
+  padding-right: 20px;
+}
+
+
+.card {
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+
+
+.card-image {
+  width: 90%;
+  padding-bottom: 30px;
 }
