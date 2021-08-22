@@ -3,7 +3,7 @@
   Base Element Styles
 ==================================== */
 * {
-  box-sizing: border;
+  box-sizing: border-box;
 }
 
 body {
@@ -16,7 +16,7 @@ header {
 
 }
 h1 {
-  margin: 0 auto;
+  padding-top: 40px;
   text-align: center;
 
 }
@@ -62,7 +62,7 @@ p {
 
 
 .main-nav {
-  margin-bottom:60px;
+  margin-bottom:30px;
 }
 
 .profile-image, .card-image {
@@ -93,28 +93,29 @@ p {
 /* =================================
   Media Queries
 ==================================== */
-@media (min-width: 769px){
-  body {
-  
-    width: 70%;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
+@media (min-width: 768px){
+body {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
+#header {
+  margin-top: 20%;
+
+}
 .nav {
   margin-top: 20px;
 }
+
 .nav li {
   display: inline;
   margin: 40px 20px 0;
 }
 
-
-
 .profile-image {
   width: 40%;
   float: right;
-
 }
 
 #home p {
@@ -123,17 +124,28 @@ p {
   padding-right: 20px;
 }
 
+#portfolio {
+  clear: both;
+
+}
 
 .card {
-  width: 50%;
+  width: 49%;
   margin: 0;
   padding: 0;
   display: inline-block;
 }
 
-
-
 .card-image {
   width: 90%;
   padding-bottom: 30px;
+}
+
+
+
+
+
+@media (min-width: 1024px){
+
+
 }
