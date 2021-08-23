@@ -4,17 +4,19 @@
 ==================================== */
 * {
   box-sizing: border-box;
+    font-family: 'Nanum Gothic', helvetica, arial, sans-serif;
+}
+
+ul a{
+  font-family: 'Nanum Gothic', helvetica, arial, sans-serif;
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
+
   padding-left: 1em;
   padding-right: 1em;
 }
 
-header {
-
-}
 h1 {
   padding-top: 40px;
   text-align: center;
@@ -30,9 +32,11 @@ h2 {
 }
 
 p {
-  text-align: center;
-  line-height: 1.3em;
 
+  line-height: 1.3em;
+  width: 87%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main-nav {
@@ -54,6 +58,7 @@ p {
 }
 
 .nav li a {
+
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -63,6 +68,31 @@ p {
 
 .main-nav {
   margin-bottom:30px;
+}
+#business-card p {
+  color: lightgrey;
+}
+
+#business-card img{
+  padding-bottom: 30px;
+  order: 2;
+  width: 37%;
+
+}
+#business-card {
+  display: flex;
+}
+
+#business-card p {
+  order: 1;
+
+}
+.card:nth-of-type(even) {
+  background: rgba(0,0,0,0.1);
+}
+
+.card:nth-of-type(odd) {
+  background: rgba(0,0,0,0.2);
 }
 
 .profile-image, .card-image {
@@ -81,6 +111,14 @@ p {
 
 .card {
   margin: 60px 0 60px 0;
+}
+
+.card-image{
+  padding-bottom: 10px;
+}
+
+.card-image h2 {
+  padding: 0;
 }
 
 #contact ul li{
@@ -115,37 +153,122 @@ body {
 
 .profile-image {
   width: 40%;
-  float: right;
+
+
 }
+
 
 #home p {
   text-align: left;
   width: 50%;
   padding-right: 20px;
 }
+#portfolio h2 {
+  width: 100%;
+}
 
 #portfolio {
-  clear: both;
-
+ display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
 }
 
 .card {
   width: 49%;
   margin: 0;
-  padding: 0;
-  display: inline-block;
+  padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-image {
-  width: 90%;
-  padding-bottom: 30px;
+  width: 100%;
+  margin: 0;
 }
 
+#contact {
+margin-top: 30px;
 
-
-
+}
+#contact h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+footer {
+  display: flex;
+  margin-top: 43px;
+  border-top: 1px solid lightgrey;
+  padding-top: 23px;
+}
+footer #name {
+  order: 1;
+  width: 30%;
+  margin: 0;
+}
+footer #nav{
+  display: none;
+}
+footer .main-nav {
+order: 3;
+}
+}
 
 @media (min-width: 1024px){
+
+#home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header h1 {
+  order: 1;
+}
+
+header .main-nav {
+  order: 2;
+}
+#home {
+  padding-top: 30px;
+}
+ #home h1 {
+   width: 50%;
+   text-align: left;
+   margin-top: 0.67em;
+   padding-top: 0;
+ }
+
+#home p {
+  text-align: left;
+  width: 70%;
+  margin: 0;
+}
+.main-nav {
+  width: 50%;
+  text-align: right;
+
+}
+
+#business-card {
+order: 3;
+}
+
+.card {
+  width: 32%;
+}
+
+.card h2 {
+  padding: 0;
+}
+
+#contact {
+  text-align: center;
+}
+#contact p{
+text-align: center;
+width: 50%;
+padding-bottom: 30px;
+}
 
 
 }
