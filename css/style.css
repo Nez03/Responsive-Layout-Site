@@ -130,6 +130,7 @@ p {
   padding-left: 0;
   font-family: helvetica, arial, sans-serif;
   text-align: center;
+  line-height: 1.2rem;
 }
 
 #contact h3 {
@@ -147,18 +148,31 @@ footer {
   padding-top: 20px;
 }
 
+footer p {
+  width:50%;
+  margin: 0;
+  text-align: left;
+
+}
 footer #name {
   order: 1;
 }
 
 footer #nav {
-  order: 2;
-  text-transform: uppercase;
+  display: none;
+}
+
+.footer-nav {
+  display: none;
 }
 
 footer .link-top {
+  order: 2;
+  width: 50%;
   text-decoration: none;
   color: black;
+  text-align: right;
+  text-transform: uppercase;
 }
 /* =================================
   Media Queries
@@ -228,6 +242,9 @@ footer {
   margin-top: 43px;
   border-top: 1px solid lightgrey;
   padding-top: 23px;
+  justify-content: space-between;
+  align-items: center;
+
 }
 footer #name {
   order: 1;
@@ -237,10 +254,14 @@ footer #name {
 footer .link-top{
   display: none;
 }
-footer .main-nav {
-order: 3;
-display: block;
+.footer-nav {
+  order: 3;
+  display: block;
 }
+.footer-nav .nav {
+  margin-top: 0;
+}
+
 
 }
 
